@@ -32,7 +32,7 @@ function DownloadWindowsKubernetesScripts()
 function DownloadAllFiles()
 {
     DownloadCniBinaries
-    DownloadWindowsKubernetesScripts
+#    DownloadWindowsKubernetesScripts
 }
 
 $BaseDir = "c:\k"
