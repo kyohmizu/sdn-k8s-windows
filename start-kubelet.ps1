@@ -1,5 +1,5 @@
 Param(
-    $clusterCIDR="192.168.0.0/16",
+    $clusterCIDR="10.200.0.0/16",
     $NetworkMode = "L2Bridge",
     $NetworkName = "l2bridge",
     [ValidateSet("process", "hyperv")]
@@ -8,8 +8,8 @@ Param(
 
 # Todo : Get these values using kubectl
 $KubeDnsSuffix ="svc.cluster.local"
-$KubeDnsServiceIp="11.0.0.10"
-$serviceCIDR="11.0.0.0/8"
+$KubeDnsServiceIp="10.32.0.10"
+$serviceCIDR="10.32.0.0/24"
 
 $WorkingDir = "c:\k"
 $CNIPath = [Io.path]::Combine($WorkingDir , "cni")

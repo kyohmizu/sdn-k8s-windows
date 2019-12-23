@@ -203,7 +203,8 @@ function GetSourceVip($ipaddress, $NetworkName)
 
 function Get-PodCIDR()
 {
-    return c:\k\kubectl.exe --kubeconfig=c:\k\config get nodes/$($(hostname).ToLower()) -o custom-columns=podCidr:.spec.podCIDR --no-headers
+    # return c:\k\kubectl.exe --kubeconfig=c:\k\config get nodes/$($(hostname).ToLower()) -o custom-columns=podCidr:.spec.podCIDR --no-headers
+    return "10.200.3.0/24"
 }
 
 function Get-PodCIDRs()
